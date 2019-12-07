@@ -55,6 +55,9 @@ h3{
     margin: 0;
     padding: 0.2em 0.7em;
 }
+#search-btn:hover{
+    background: #333;
+}
 .sml-btn{
     background: #757575;
     color: #fff;
@@ -62,8 +65,34 @@ h3{
     width: 10em;
     padding: 0.2em 0.7em;
 }
+.sml-btn:hover{
+    background: #333;
+}
 #btn-plcmnt{
     margin: 0;
     padding: 0;
     display: flex;
+}
+#page-no-1, #page-no-2, #page-no-3, #page-no-4, #prv-page-go, #next-page-go{
+    background: #757575;
+    color: #fff;
+    font-size: 1em;
+    border-radius: 7px;
+    width: 15em;
+    padding: 0.4em 1.4em;
+}
+#page-no-1:hover, #page-no-2:hover, #page-no-3:hover, #page-no-4:hover, #prv-page-go:hover, #next-page-go:hover{
+    background: #333;
+    color: #fff;
+}
+.product-selection-btn{
+    background: #fff;
+    color: #333;
+    border-radius: 7px;
+    width: 15em;
+    padding: 0.2em 0.7em;
+}
+.product-selection-btn:hover{
+    background: #333;
+    color: #fff;
 }

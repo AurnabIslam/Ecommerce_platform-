@@ -1,5 +1,5 @@
 //Product Data
-var product1 = {
+var product1 = {            //Product 1
     name:'Shirt #1',
     imgURL:'img/tshirt_1.jpg',
     color1:'Grey',
@@ -11,7 +11,7 @@ var product1 = {
     rating:'4.5',
     price: 39.99
 };
-var product2 = {
+var product2 = {            //Product 2
     name:'Shirt #2',
     imgURL:'img/tshirt_2.jpg',
     color1:'Black',
@@ -23,7 +23,7 @@ var product2 = {
     rating:'3.5',
     price: 19.99
 };
-var product3 = {
+var product3 = {            //Product 3
     name:'Shirt #3',
     imgURL:'img/tshirt_3.jpg',
     color1:'White',
@@ -35,7 +35,7 @@ var product3 = {
     rating:'4.2',
     price: 29.99
 };
-var product4 = {
+var product4 = {            //Product 4
     name:'Shirt #4',
     imgURL:'img/tshirt_4.jpg',
     color1:'White',
@@ -47,7 +47,7 @@ var product4 = {
     rating:'3.9',
     price: 25.99
 };
-var product5 = {
+var product5 = {            //Product 5
     name:'Shirt #5',
     imgURL:'img/tshirt_5.jpg',
     color1:'Grey',
@@ -59,7 +59,7 @@ var product5 = {
     rating:'4.3',
     price: 35.99
 };
-var product6 = {
+var product6 = {            //Product 6
     name:'Shirt #6',
     imgURL:'#',
     color1:'Black',
@@ -71,7 +71,7 @@ var product6 = {
     rating:'4',
     price: 39.99
 };
-var product7 = {
+var product7 = {            //Product 7
     name:'Shirt #7',
     imgURL:'#',
     color1:'Grey',
@@ -83,7 +83,7 @@ var product7 = {
     rating:'4',
     price: 29.99
 };
-var product8 = {
+var product8 = {            //Product 8
     name:'Shirt #8',
     imgURL:'#',
     color1:'Black',
@@ -95,7 +95,7 @@ var product8 = {
     rating:'4',
     price: 25.99
 };
-var product9 = {
+var product9 = {            //Product 9
     name:'Shirt #9',
     imgURL:'#',
     color1:'Red',
@@ -107,7 +107,7 @@ var product9 = {
     rating:'4',
     price: 29.99
 };
-var product10 = {
+var product10 = {            //Product 10
     name:'Shirt #10',
     imgURL:'#',
     color1:'Black',
@@ -119,7 +119,7 @@ var product10 = {
     rating:'4',
     price: 29.99
 };
-var product11 = {
+var product11 = {            //Product 11
     name:'Shirt #11',
     imgURL:'#',
     color1:'Grey',
@@ -131,7 +131,7 @@ var product11 = {
     rating:'4',
     price: 39.99
 };
-var product12 = {
+var product12 = {            //Product 12
     name:'Shirt #12',
     imgURL:'#',
     color1:'Black',
@@ -143,7 +143,7 @@ var product12 = {
     rating:'4',
     price: 19.99
 };
-var product13 = {
+var product13 = {            //Product 13
     name:'Shirt #13',
     imgURL:'#',
     color1:'White',
@@ -155,7 +155,7 @@ var product13 = {
     rating:'4',
     price: 29.99
 };
-var product14 = {
+var product14 = {            //Product 14
     name:'Shirt #14',
     imgURL:'#',
     color1:'White',
@@ -167,7 +167,7 @@ var product14 = {
     rating:'4',
     price: 25.99
 };
-var product15= {
+var product15= {            //Product 15
     name:'Shirt #15',
     imgURL:'#',
     color1:'Grey',
@@ -179,7 +179,7 @@ var product15= {
     rating:'4',
     price: 35.99
 };
-var product16 = {
+var product16 = {            //Product 16
     name:'Shirt #16',
     imgURL:'#',
     color1:'Black',
@@ -191,7 +191,7 @@ var product16 = {
     rating:'4',
     price: 39.99
 };
-var product17 = {
+var product17 = {            //Product 17
     name:'Shirt #17',
     imgURL:'#',
     color1:'Grey',
@@ -203,7 +203,7 @@ var product17 = {
     rating:'4',
     price: 29.99
 };
-var product18 = {
+var product18 = {            //Product 18
     name:'Shirt #18',
     imgURL:'#',
     color1:'Black',
@@ -215,7 +215,7 @@ var product18 = {
     rating:'4',
     price: 25.99
 };
-var product19 = {
+var product19 = {            //Product 19
     name:'Shirt #19',
     imgURL:'#',
     color1:'Red',
@@ -227,7 +227,7 @@ var product19 = {
     rating:'4',
     price: 35.99
 };
-var product20 = {
+var product20 = {            //Product 20
     name:'Shirt #20',
     imgURL:'#',
     color1:'Black',
@@ -242,350 +242,734 @@ var product20 = {
 
 
 //Switch case for product batch selection
-var switch_case_op = 1;
+var page_number = 1;
+document.onload = page_no_1();
 
-
-
-switch(switch_case_op){
+function prv_page_go(){
+    page_number = page_number-1;
+    if(page_number==1){page_no_1();}
+    else if(page_number==2){page_no_2();}
+    else if(page_number==3){page_no_3();}
+    else{page_no_4();}
+    //document.location.reload();
+};
+function page_no_1(){
+    page_number = 1;
     
-    case 1:
-        //Product Images
-        document.getElementById('product1-img').src=product1.imgURL;
-        document.getElementById('product2-img').src=product2.imgURL;
-        document.getElementById('product3-img').src=product3.imgURL;
-        document.getElementById('product4-img').src=product4.imgURL;
-        document.getElementById('product5-img').src=product5.imgURL;
+    //Product Images
+    document.getElementById('product1-img').src=product1.imgURL;
+    document.getElementById('product2-img').src=product2.imgURL;
+    document.getElementById('product3-img').src=product3.imgURL;
+    document.getElementById('product4-img').src=product4.imgURL;
+    document.getElementById('product5-img').src=product5.imgURL;
 
-        //Product Names
-        document.getElementById('product1-name').innerHTML=product1.name;
-        document.getElementById('product2-name').innerHTML=product2.name;
-        document.getElementById('product3-name').innerHTML=product3.name;
-        document.getElementById('product4-name').innerHTML=product4.name;
-        document.getElementById('product5-name').innerHTML=product5.name;
+    //Product Names
+    document.getElementById('product1-name').innerHTML=product1.name;
+    document.getElementById('product2-name').innerHTML=product2.name;
+    document.getElementById('product3-name').innerHTML=product3.name;
+    document.getElementById('product4-name').innerHTML=product4.name;
+    document.getElementById('product5-name').innerHTML=product5.name;
 
-        //Product Colors
-        document.getElementById('product1-color1-text').textContent=product1.color1;
-        document.getElementById('product1-color2-text').textContent=product1.color2;
-        document.getElementById('product1-color3-text').textContent=product1.color3;
+    //Product Colors
+    document.getElementById('product1-color1-text').textContent=product1.color1;
+    document.getElementById('product1-color2-text').textContent=product1.color2;
+    document.getElementById('product1-color3-text').textContent=product1.color3;
 
-        document.getElementById('product2-color1-text').textContent=product2.color1;
-        document.getElementById('product2-color2-text').textContent=product2.color2;
-        document.getElementById('product2-color3-text').textContent=product2.color3;
-
-
-        document.getElementById('product3-color1-text').textContent=product3.color1;
-        document.getElementById('product3-color2-text').textContent=product3.color2;
-        document.getElementById('product3-color3-text').textContent=product3.color3;
+    document.getElementById('product2-color1-text').textContent=product2.color1;
+    document.getElementById('product2-color2-text').textContent=product2.color2;
+    document.getElementById('product2-color3-text').textContent=product2.color3;
 
 
-        document.getElementById('product4-color1-text').textContent=product4.color1;
-        document.getElementById('product4-color2-text').textContent=product4.color2;
-        document.getElementById('product4-color3-text').textContent=product4.color3;
+    document.getElementById('product3-color1-text').textContent=product3.color1;
+    document.getElementById('product3-color2-text').textContent=product3.color2;
+    document.getElementById('product3-color3-text').textContent=product3.color3;
 
 
-        document.getElementById('product5-color1-text').textContent=product5.color1;
-        document.getElementById('product5-color2-text').textContent=product5.color2;
-        document.getElementById('product5-color3-text').textContent=product5.color3;
+    document.getElementById('product4-color1-text').textContent=product4.color1;
+    document.getElementById('product4-color2-text').textContent=product4.color2;
+    document.getElementById('product4-color3-text').textContent=product4.color3;
 
-        //Product Sizes
-        document.getElementById('product1-size1-text').textContent=product1.size1;
-        document.getElementById('product1-size2-text').textContent=product1.size2;
-        document.getElementById('product1-size3-text').textContent=product1.size3;
 
-        document.getElementById('product2-size1-text').textContent=product2.size1;
-        document.getElementById('product2-size2-text').textContent=product2.size2;
-        document.getElementById('product2-size3-text').textContent=product2.size3;
+    document.getElementById('product5-color1-text').textContent=product5.color1;
+    document.getElementById('product5-color2-text').textContent=product5.color2;
+    document.getElementById('product5-color3-text').textContent=product5.color3;
 
-        document.getElementById('product3-size1-text').textContent=product3.size1;
-        document.getElementById('product3-size2-text').textContent=product3.size2;
-        document.getElementById('product3-size3-text').textContent=product3.size3;
+    //Product Sizes
+    document.getElementById('product1-size1-text').textContent=product1.size1;
+    document.getElementById('product1-size2-text').textContent=product1.size2;
+    document.getElementById('product1-size3-text').textContent=product1.size3;
 
-        document.getElementById('product4-size1-text').textContent=product4.size1;
-        document.getElementById('product4-size2-text').textContent=product4.size2;
-        document.getElementById('product4-size3-text').textContent=product4.size3;
+    document.getElementById('product2-size1-text').textContent=product2.size1;
+    document.getElementById('product2-size2-text').textContent=product2.size2;
+    document.getElementById('product2-size3-text').textContent=product2.size3;
 
-        document.getElementById('product5-size1-text').textContent=product5.size1;
-        document.getElementById('product5-size2-text').textContent=product5.size2;
-        document.getElementById('product5-size3-text').textContent=product5.size3;
+    document.getElementById('product3-size1-text').textContent=product3.size1;
+    document.getElementById('product3-size2-text').textContent=product3.size2;
+    document.getElementById('product3-size3-text').textContent=product3.size3;
 
-        //Product Rating
-        document.getElementById('product1-rating').innerHTML=product1.rating;
-        document.getElementById('product2-rating').innerHTML=product2.rating;
-        document.getElementById('product3-rating').innerHTML=product3.rating;
-        document.getElementById('product4-rating').innerHTML=product4.rating;
-        document.getElementById('product5-rating').innerHTML=product5.rating;
+    document.getElementById('product4-size1-text').textContent=product4.size1;
+    document.getElementById('product4-size2-text').textContent=product4.size2;
+    document.getElementById('product4-size3-text').textContent=product4.size3;
 
-        //Product Price
-        document.getElementById('product1-price-val').setAttribute = product1.price;
-        document.getElementById('product1-price-ins').innerHTML = "$" + product1.price;
+    document.getElementById('product5-size1-text').textContent=product5.size1;
+    document.getElementById('product5-size2-text').textContent=product5.size2;
+    document.getElementById('product5-size3-text').textContent=product5.size3;
 
-        document.getElementById('product2-price-val').setAttribute = product2.price;
-        document.getElementById('product2-price-ins').innerHTML = "$" + product2.price;
+    //Product Rating
+    document.getElementById('product1-rating').innerHTML=product1.rating;
+    document.getElementById('product2-rating').innerHTML=product2.rating;
+    document.getElementById('product3-rating').innerHTML=product3.rating;
+    document.getElementById('product4-rating').innerHTML=product4.rating;
+    document.getElementById('product5-rating').innerHTML=product5.rating;
 
-        document.getElementById('product3-price-val').setAttribute = product3.price;
-        document.getElementById('product3-price-ins').innerHTML = "$" + product3.price;
+    //Product Price
+    document.getElementById('product1-price-val').setAttribute = product1.price;
+    document.getElementById('product1-price-ins').innerHTML = "$" + product1.price;
 
-        document.getElementById('product4-price-val').setAttribute = product4.price;
-        document.getElementById('product4-price-ins').innerHTML = "$" + product4.price;
+    document.getElementById('product2-price-val').setAttribute = product2.price;
+    document.getElementById('product2-price-ins').innerHTML = "$" + product2.price;
 
-        document.getElementById('product5-price-val').setAttribute = product5.price;
-        document.getElementById('product5-price-ins').innerHTML = "$" + product5.price;
-        
-        break;
+    document.getElementById('product3-price-val').setAttribute = product3.price;
+    document.getElementById('product3-price-ins').innerHTML = "$" + product3.price;
+
+    document.getElementById('product4-price-val').setAttribute = product4.price;
+    document.getElementById('product4-price-ins').innerHTML = "$" + product4.price;
+
+    document.getElementById('product5-price-val').setAttribute = product5.price;
+    document.getElementById('product5-price-ins').innerHTML = "$" + product5.price;
     
-    case 2:        
-        //Product Images
-        document.getElementById('product1-img').src=product6.imgURL;
-        document.getElementById('product2-img').src=product7.imgURL;
-        document.getElementById('product3-img').src=product8.imgURL;
-        document.getElementById('product4-img').src=product9.imgURL;
-        document.getElementById('product5-img').src=product10.imgURL;
+    //document.location.reload();
+    document.getElementById('page_id').innerHTML = "1-5 of 20 products found";
+    document.getElementById('prv-page-go').disabled = true;
+    document.getElementById('next-page-go').disabled = false;
 
-        //Product Names
-        document.getElementById('product1-name').innerHTML=product6.name;
-        document.getElementById('product2-name').innerHTML=product7.name;
-        document.getElementById('product3-name').innerHTML=product8.name;
-        document.getElementById('product4-name').innerHTML=product9.name;
-        document.getElementById('product5-name').innerHTML=product10.name;
+};
+function page_no_2(){
+    page_number = 2;
+    
+    //Product Images
+    document.getElementById('product1-img').src=product6.imgURL;
+    document.getElementById('product2-img').src=product7.imgURL;
+    document.getElementById('product3-img').src=product8.imgURL;
+    document.getElementById('product4-img').src=product9.imgURL;
+    document.getElementById('product5-img').src=product10.imgURL;
 
-        //Product Colors
-        document.getElementById('product1-color1-text').textContent=product6.color1;
-        document.getElementById('product1-color2-text').textContent=product6.color2;
-        document.getElementById('product1-color3-text').textContent=product6.color3;
+    //Product Names
+    document.getElementById('product1-name').innerHTML=product6.name;
+    document.getElementById('product2-name').innerHTML=product7.name;
+    document.getElementById('product3-name').innerHTML=product8.name;
+    document.getElementById('product4-name').innerHTML=product9.name;
+    document.getElementById('product5-name').innerHTML=product10.name;
 
-        document.getElementById('product2-color1-text').textContent=product7.color1;
-        document.getElementById('product2-color2-text').textContent=product7.color2;
-        document.getElementById('product2-color3-text').textContent=product7.color3;
+    //Product Colors
+    document.getElementById('product1-color1-text').textContent=product6.color1;
+    document.getElementById('product1-color2-text').textContent=product6.color2;
+    document.getElementById('product1-color3-text').textContent=product6.color3;
 
-
-        document.getElementById('product3-color1-text').textContent=product8.color1;
-        document.getElementById('product3-color2-text').textContent=product8.color2;
-        document.getElementById('product3-color3-text').textContent=product8.color3;
-
-
-        document.getElementById('product4-color1-text').textContent=product9.color1;
-        document.getElementById('product4-color2-text').textContent=product9.color2;
-        document.getElementById('product4-color3-text').textContent=product9.color3;
+    document.getElementById('product2-color1-text').textContent=product7.color1;
+    document.getElementById('product2-color2-text').textContent=product7.color2;
+    document.getElementById('product2-color3-text').textContent=product7.color3;
 
 
-        document.getElementById('product5-color1-text').textContent=product10.color1;
-        document.getElementById('product5-color2-text').textContent=product10.color2;
-        document.getElementById('product5-color3-text').textContent=product10.color3;
-
-        //Product Sizes
-        document.getElementById('product1-size1-text').textContent=product6.size1;
-        document.getElementById('product1-size2-text').textContent=product6.size2;
-        document.getElementById('product1-size3-text').textContent=product6.size3;
-
-        document.getElementById('product2-size1-text').textContent=product7.size1;
-        document.getElementById('product2-size2-text').textContent=product7.size2;
-        document.getElementById('product2-size3-text').textContent=product7.size3;
-
-        document.getElementById('product3-size1-text').textContent=product8.size1;
-        document.getElementById('product3-size2-text').textContent=product8.size2;
-        document.getElementById('product3-size3-text').textContent=product8.size3;
-
-        document.getElementById('product4-size1-text').textContent=product9.size1;
-        document.getElementById('product4-size2-text').textContent=product9.size2;
-        document.getElementById('product4-size3-text').textContent=product9.size3;
-
-        document.getElementById('product5-size1-text').textContent=product10.size1;
-        document.getElementById('product5-size2-text').textContent=product10.size2;
-        document.getElementById('product5-size3-text').textContent=product10.size3;
-
-        //Product Rating
-        document.getElementById('product1-rating').innerHTML=product6.rating;
-        document.getElementById('product2-rating').innerHTML=product7.rating;
-        document.getElementById('product3-rating').innerHTML=product8.rating;
-        document.getElementById('product4-rating').innerHTML=product9.rating;
-        document.getElementById('product5-rating').innerHTML=product10.rating;
-
-        //Product Price
-        document.getElementById('product1-price-val').setAttribute = product6.price;
-        document.getElementById('product1-price-ins').innerHTML = "$" + product6.price;
-
-        document.getElementById('product2-price-val').setAttribute = product7.price;
-        document.getElementById('product2-price-ins').innerHTML = "$" + product7.price;
-
-        document.getElementById('product3-price-val').setAttribute = product8.price;
-        document.getElementById('product3-price-ins').innerHTML = "$" + product8.price;
-
-        document.getElementById('product4-price-val').setAttribute = product9.price;
-        document.getElementById('product4-price-ins').innerHTML = "$" + product9.price;
-
-        document.getElementById('product5-price-val').setAttribute = product10.price;
-        document.getElementById('product5-price-ins').innerHTML = "$" + product10.price;
-
-        break;
-    case 3:
-        //Product Images
-        document.getElementById('product1-img').src=product11.imgURL;
-        document.getElementById('product2-img').src=product12.imgURL;
-        document.getElementById('product3-img').src=product13.imgURL;
-        document.getElementById('product4-img').src=product14.imgURL;
-        document.getElementById('product5-img').src=product15.imgURL;
-
-        //Product Names
-        document.getElementById('product1-name').innerHTML=product11.name;
-        document.getElementById('product2-name').innerHTML=product12.name;
-        document.getElementById('product3-name').innerHTML=product13.name;
-        document.getElementById('product4-name').innerHTML=product14.name;
-        document.getElementById('product5-name').innerHTML=product15.name;
-
-        //Product Colors
-        document.getElementById('product1-color1-text').textContent=product11.color1;
-        document.getElementById('product1-color2-text').textContent=product11.color2;
-        document.getElementById('product1-color3-text').textContent=product11.color3;
-
-        document.getElementById('product2-color1-text').textContent=product12.color1;
-        document.getElementById('product2-color2-text').textContent=product12.color2;
-        document.getElementById('product2-color3-text').textContent=product12.color3;
+    document.getElementById('product3-color1-text').textContent=product8.color1;
+    document.getElementById('product3-color2-text').textContent=product8.color2;
+    document.getElementById('product3-color3-text').textContent=product8.color3;
 
 
-        document.getElementById('product3-color1-text').textContent=product13.color1;
-        document.getElementById('product3-color2-text').textContent=product13.color2;
-        document.getElementById('product3-color3-text').textContent=product13.color3;
+    document.getElementById('product4-color1-text').textContent=product9.color1;
+    document.getElementById('product4-color2-text').textContent=product9.color2;
+    document.getElementById('product4-color3-text').textContent=product9.color3;
 
 
-        document.getElementById('product4-color1-text').textContent=product14.color1;
-        document.getElementById('product4-color2-text').textContent=product14.color2;
-        document.getElementById('product4-color3-text').textContent=product14.color3;
+    document.getElementById('product5-color1-text').textContent=product10.color1;
+    document.getElementById('product5-color2-text').textContent=product10.color2;
+    document.getElementById('product5-color3-text').textContent=product10.color3;
+
+    //Product Sizes
+    document.getElementById('product1-size1-text').textContent=product6.size1;
+    document.getElementById('product1-size2-text').textContent=product6.size2;
+    document.getElementById('product1-size3-text').textContent=product6.size3;
+
+    document.getElementById('product2-size1-text').textContent=product7.size1;
+    document.getElementById('product2-size2-text').textContent=product7.size2;
+    document.getElementById('product2-size3-text').textContent=product7.size3;
+
+    document.getElementById('product3-size1-text').textContent=product8.size1;
+    document.getElementById('product3-size2-text').textContent=product8.size2;
+    document.getElementById('product3-size3-text').textContent=product8.size3;
+
+    document.getElementById('product4-size1-text').textContent=product9.size1;
+    document.getElementById('product4-size2-text').textContent=product9.size2;
+    document.getElementById('product4-size3-text').textContent=product9.size3;
+
+    document.getElementById('product5-size1-text').textContent=product10.size1;
+    document.getElementById('product5-size2-text').textContent=product10.size2;
+    document.getElementById('product5-size3-text').textContent=product10.size3;
+
+    //Product Rating
+    document.getElementById('product1-rating').innerHTML=product6.rating;
+    document.getElementById('product2-rating').innerHTML=product7.rating;
+    document.getElementById('product3-rating').innerHTML=product8.rating;
+    document.getElementById('product4-rating').innerHTML=product9.rating;
+    document.getElementById('product5-rating').innerHTML=product10.rating;
+
+    //Product Price
+    document.getElementById('product1-price-val').setAttribute = product6.price;
+    document.getElementById('product1-price-ins').innerHTML = "$" + product6.price;
+
+    document.getElementById('product2-price-val').setAttribute = product7.price;
+    document.getElementById('product2-price-ins').innerHTML = "$" + product7.price;
+
+    document.getElementById('product3-price-val').setAttribute = product8.price;
+    document.getElementById('product3-price-ins').innerHTML = "$" + product8.price;
+
+    document.getElementById('product4-price-val').setAttribute = product9.price;
+    document.getElementById('product4-price-ins').innerHTML = "$" + product9.price;
+
+    document.getElementById('product5-price-val').setAttribute = product10.price;
+    document.getElementById('product5-price-ins').innerHTML = "$" + product10.price;
 
 
-        document.getElementById('product5-color1-text').textContent=product15.color1;
-        document.getElementById('product5-color2-text').textContent=product15.color2;
-        document.getElementById('product5-color3-text').textContent=product15.color3;
+    //document.location.reload();
+    document.getElementById('page_id').innerHTML = "6-10 of 20 products found";
+    document.getElementById('prv-page-go').disabled = false;
+    document.getElementById('next-page-go').disabled = false;
 
-        //Product Sizes
-        document.getElementById('product1-size1-text').textContent=product11.size1;
-        document.getElementById('product1-size2-text').textContent=product11.size2;
-        document.getElementById('product1-size3-text').textContent=product11.size3;
+};
+function page_no_3(){
+    page_number = 3;
+    
+    //Product Images
+    document.getElementById('product1-img').src=product11.imgURL;
+    document.getElementById('product2-img').src=product12.imgURL;
+    document.getElementById('product3-img').src=product13.imgURL;
+    document.getElementById('product4-img').src=product14.imgURL;
+    document.getElementById('product5-img').src=product15.imgURL;
 
-        document.getElementById('product2-size1-text').textContent=product12.size1;
-        document.getElementById('product2-size2-text').textContent=product12.size2;
-        document.getElementById('product2-size3-text').textContent=product12.size3;
+    //Product Names
+    document.getElementById('product1-name').innerHTML=product11.name;
+    document.getElementById('product2-name').innerHTML=product12.name;
+    document.getElementById('product3-name').innerHTML=product13.name;
+    document.getElementById('product4-name').innerHTML=product14.name;
+    document.getElementById('product5-name').innerHTML=product15.name;
 
-        document.getElementById('product3-size1-text').textContent=product13.size1;
-        document.getElementById('product3-size2-text').textContent=product13.size2;
-        document.getElementById('product3-size3-text').textContent=product13.size3;
+    //Product Colors
+    document.getElementById('product1-color1-text').textContent=product11.color1;
+    document.getElementById('product1-color2-text').textContent=product11.color2;
+    document.getElementById('product1-color3-text').textContent=product11.color3;
 
-        document.getElementById('product4-size1-text').textContent=product14.size1;
-        document.getElementById('product4-size2-text').textContent=product14.size2;
-        document.getElementById('product4-size3-text').textContent=product14.size3;
-
-        document.getElementById('product5-size1-text').textContent=product15.size1;
-        document.getElementById('product5-size2-text').textContent=product15.size2;
-        document.getElementById('product5-size3-text').textContent=product15.size3;
-
-        //Product Rating
-        document.getElementById('product1-rating').innerHTML=product11.rating;
-        document.getElementById('product2-rating').innerHTML=product12.rating;
-        document.getElementById('product3-rating').innerHTML=product13.rating;
-        document.getElementById('product4-rating').innerHTML=product14.rating;
-        document.getElementById('product5-rating').innerHTML=product15.rating;
-
-        //Product Price
-        document.getElementById('product1-price-val').setAttribute = product11.price;
-        document.getElementById('product1-price-ins').innerHTML = "$" + product11.price;
-
-        document.getElementById('product2-price-val').setAttribute = product12.price;
-        document.getElementById('product2-price-ins').innerHTML = "$" + product12.price;
-
-        document.getElementById('product3-price-val').setAttribute = product13.price;
-        document.getElementById('product3-price-ins').innerHTML = "$" + product13.price;
-
-        document.getElementById('product4-price-val').setAttribute = product14.price;
-        document.getElementById('product4-price-ins').innerHTML = "$" + product14.price;
-
-        document.getElementById('product5-price-val').setAttribute = product15.price;
-        document.getElementById('product5-price-ins').innerHTML = "$" + product15.price;
-        
-        
-        break;
-    case 4:
-        //Product Images
-        document.getElementById('product1-img').src=product16.imgURL;
-        document.getElementById('product2-img').src=product17.imgURL;
-        document.getElementById('product3-img').src=product18.imgURL;
-        document.getElementById('product4-img').src=product19.imgURL;
-        document.getElementById('product5-img').src=product20.imgURL;
-
-        //Product Names
-        document.getElementById('product1-name').innerHTML=product16.name;
-        document.getElementById('product2-name').innerHTML=product17.name;
-        document.getElementById('product3-name').innerHTML=product18.name;
-        document.getElementById('product4-name').innerHTML=product19.name;
-        document.getElementById('product5-name').innerHTML=product20.name;
-
-        //Product Colors
-        document.getElementById('product1-color1-text').textContent=product16.color1;
-        document.getElementById('product1-color2-text').textContent=product16.color2;
-        document.getElementById('product1-color3-text').textContent=product16.color3;
-
-        document.getElementById('product2-color1-text').textContent=product17.color1;
-        document.getElementById('product2-color2-text').textContent=product17.color2;
-        document.getElementById('product2-color3-text').textContent=product17.color3;
+    document.getElementById('product2-color1-text').textContent=product12.color1;
+    document.getElementById('product2-color2-text').textContent=product12.color2;
+    document.getElementById('product2-color3-text').textContent=product12.color3;
 
 
-        document.getElementById('product3-color1-text').textContent=product18.color1;
-        document.getElementById('product3-color2-text').textContent=product18.color2;
-        document.getElementById('product3-color3-text').textContent=product18.color3;
+    document.getElementById('product3-color1-text').textContent=product13.color1;
+    document.getElementById('product3-color2-text').textContent=product13.color2;
+    document.getElementById('product3-color3-text').textContent=product13.color3;
 
 
-        document.getElementById('product4-color1-text').textContent=product19.color1;
-        document.getElementById('product4-color2-text').textContent=product19.color2;
-        document.getElementById('product4-color3-text').textContent=product19.color3;
+    document.getElementById('product4-color1-text').textContent=product14.color1;
+    document.getElementById('product4-color2-text').textContent=product14.color2;
+    document.getElementById('product4-color3-text').textContent=product14.color3;
 
 
-        document.getElementById('product5-color1-text').textContent=product20.color1;
-        document.getElementById('product5-color2-text').textContent=product20.color2;
-        document.getElementById('product5-color3-text').textContent=product20.color3;
+    document.getElementById('product5-color1-text').textContent=product15.color1;
+    document.getElementById('product5-color2-text').textContent=product15.color2;
+    document.getElementById('product5-color3-text').textContent=product15.color3;
 
-        //Product Sizes
-        document.getElementById('product1-size1-text').textContent=product16.size1;
-        document.getElementById('product1-size2-text').textContent=product16.size2;
-        document.getElementById('product1-size3-text').textContent=product16.size3;
+    //Product Sizes
+    document.getElementById('product1-size1-text').textContent=product11.size1;
+    document.getElementById('product1-size2-text').textContent=product11.size2;
+    document.getElementById('product1-size3-text').textContent=product11.size3;
 
-        document.getElementById('product2-size1-text').textContent=product17.size1;
-        document.getElementById('product2-size2-text').textContent=product17.size2;
-        document.getElementById('product2-size3-text').textContent=product17.size3;
+    document.getElementById('product2-size1-text').textContent=product12.size1;
+    document.getElementById('product2-size2-text').textContent=product12.size2;
+    document.getElementById('product2-size3-text').textContent=product12.size3;
 
-        document.getElementById('product3-size1-text').textContent=product18.size1;
-        document.getElementById('product3-size2-text').textContent=product18.size2;
-        document.getElementById('product3-size3-text').textContent=product18.size3;
+    document.getElementById('product3-size1-text').textContent=product13.size1;
+    document.getElementById('product3-size2-text').textContent=product13.size2;
+    document.getElementById('product3-size3-text').textContent=product13.size3;
 
-        document.getElementById('product4-size1-text').textContent=product19.size1;
-        document.getElementById('product4-size2-text').textContent=product19.size2;
-        document.getElementById('product4-size3-text').textContent=product19.size3;
+    document.getElementById('product4-size1-text').textContent=product14.size1;
+    document.getElementById('product4-size2-text').textContent=product14.size2;
+    document.getElementById('product4-size3-text').textContent=product14.size3;
 
-        document.getElementById('product5-size1-text').textContent=product20.size1;
-        document.getElementById('product5-size2-text').textContent=product20.size2;
-        document.getElementById('product5-size3-text').textContent=product20.size3;
+    document.getElementById('product5-size1-text').textContent=product15.size1;
+    document.getElementById('product5-size2-text').textContent=product15.size2;
+    document.getElementById('product5-size3-text').textContent=product15.size3;
 
-        //Product Rating
-        document.getElementById('product1-rating').innerHTML=product16.rating;
-        document.getElementById('product2-rating').innerHTML=product17.rating;
-        document.getElementById('product3-rating').innerHTML=product18.rating;
-        document.getElementById('product4-rating').innerHTML=product19.rating;
-        document.getElementById('product5-rating').innerHTML=product20.rating;
+    //Product Rating
+    document.getElementById('product1-rating').innerHTML=product11.rating;
+    document.getElementById('product2-rating').innerHTML=product12.rating;
+    document.getElementById('product3-rating').innerHTML=product13.rating;
+    document.getElementById('product4-rating').innerHTML=product14.rating;
+    document.getElementById('product5-rating').innerHTML=product15.rating;
 
-        //Product Price
-        document.getElementById('product1-price-val').setAttribute = product16.price;
-        document.getElementById('product1-price-ins').innerHTML = "$" + product16.price;
+    //Product Price
+    document.getElementById('product1-price-val').setAttribute = product11.price;
+    document.getElementById('product1-price-ins').innerHTML = "$" + product11.price;
 
-        document.getElementById('product2-price-val').setAttribute = product17.price;
-        document.getElementById('product2-price-ins').innerHTML = "$" + product17.price;
+    document.getElementById('product2-price-val').setAttribute = product12.price;
+    document.getElementById('product2-price-ins').innerHTML = "$" + product12.price;
 
-        document.getElementById('product3-price-val').setAttribute = product18.price;
-        document.getElementById('product3-price-ins').innerHTML = "$" + product18.price;
+    document.getElementById('product3-price-val').setAttribute = product13.price;
+    document.getElementById('product3-price-ins').innerHTML = "$" + product13.price;
 
-        document.getElementById('product4-price-val').setAttribute = product19.price;
-        document.getElementById('product4-price-ins').innerHTML = "$" + product19.price;
+    document.getElementById('product4-price-val').setAttribute = product14.price;
+    document.getElementById('product4-price-ins').innerHTML = "$" + product14.price;
 
-        document.getElementById('product5-price-val').setAttribute = product20.price;
-        document.getElementById('product5-price-ins').innerHTML = "$" + product20.price;
+    document.getElementById('product5-price-val').setAttribute = product15.price;
+    document.getElementById('product5-price-ins').innerHTML = "$" + product15.price;
+    
+    
 
-        break;
-    default:
-        break;   
+    //document.location.reload();
+    document.getElementById('page_id').innerHTML = "11-15 of 20 products found";
+    document.getElementById('prv-page-go').disabled = false;
+    document.getElementById('next-page-go').disabled = false;
+
+};
+function page_no_4(){
+    page_number = 4;
+    
+    //Product Images
+    document.getElementById('product1-img').src=product16.imgURL;
+    document.getElementById('product2-img').src=product17.imgURL;
+    document.getElementById('product3-img').src=product18.imgURL;
+    document.getElementById('product4-img').src=product19.imgURL;
+    document.getElementById('product5-img').src=product20.imgURL;
+
+    //Product Names
+    document.getElementById('product1-name').innerHTML=product16.name;
+    document.getElementById('product2-name').innerHTML=product17.name;
+    document.getElementById('product3-name').innerHTML=product18.name;
+    document.getElementById('product4-name').innerHTML=product19.name;
+    document.getElementById('product5-name').innerHTML=product20.name;
+
+    //Product Colors
+    document.getElementById('product1-color1-text').textContent=product16.color1;
+    document.getElementById('product1-color2-text').textContent=product16.color2;
+    document.getElementById('product1-color3-text').textContent=product16.color3;
+
+    document.getElementById('product2-color1-text').textContent=product17.color1;
+    document.getElementById('product2-color2-text').textContent=product17.color2;
+    document.getElementById('product2-color3-text').textContent=product17.color3;
+
+
+    document.getElementById('product3-color1-text').textContent=product18.color1;
+    document.getElementById('product3-color2-text').textContent=product18.color2;
+    document.getElementById('product3-color3-text').textContent=product18.color3;
+
+
+    document.getElementById('product4-color1-text').textContent=product19.color1;
+    document.getElementById('product4-color2-text').textContent=product19.color2;
+    document.getElementById('product4-color3-text').textContent=product19.color3;
+
+
+    document.getElementById('product5-color1-text').textContent=product20.color1;
+    document.getElementById('product5-color2-text').textContent=product20.color2;
+    document.getElementById('product5-color3-text').textContent=product20.color3;
+
+    //Product Sizes
+    document.getElementById('product1-size1-text').textContent=product16.size1;
+    document.getElementById('product1-size2-text').textContent=product16.size2;
+    document.getElementById('product1-size3-text').textContent=product16.size3;
+
+    document.getElementById('product2-size1-text').textContent=product17.size1;
+    document.getElementById('product2-size2-text').textContent=product17.size2;
+    document.getElementById('product2-size3-text').textContent=product17.size3;
+
+    document.getElementById('product3-size1-text').textContent=product18.size1;
+    document.getElementById('product3-size2-text').textContent=product18.size2;
+    document.getElementById('product3-size3-text').textContent=product18.size3;
+
+    document.getElementById('product4-size1-text').textContent=product19.size1;
+    document.getElementById('product4-size2-text').textContent=product19.size2;
+    document.getElementById('product4-size3-text').textContent=product19.size3;
+
+    document.getElementById('product5-size1-text').textContent=product20.size1;
+    document.getElementById('product5-size2-text').textContent=product20.size2;
+    document.getElementById('product5-size3-text').textContent=product20.size3;
+
+    //Product Rating
+    document.getElementById('product1-rating').innerHTML=product16.rating;
+    document.getElementById('product2-rating').innerHTML=product17.rating;
+    document.getElementById('product3-rating').innerHTML=product18.rating;
+    document.getElementById('product4-rating').innerHTML=product19.rating;
+    document.getElementById('product5-rating').innerHTML=product20.rating;
+
+    //Product Price
+    document.getElementById('product1-price-val').setAttribute = product16.price;
+    document.getElementById('product1-price-ins').innerHTML = "$" + product16.price;
+
+    document.getElementById('product2-price-val').setAttribute = product17.price;
+    document.getElementById('product2-price-ins').innerHTML = "$" + product17.price;
+
+    document.getElementById('product3-price-val').setAttribute = product18.price;
+    document.getElementById('product3-price-ins').innerHTML = "$" + product18.price;
+
+    document.getElementById('product4-price-val').setAttribute = product19.price;
+    document.getElementById('product4-price-ins').innerHTML = "$" + product19.price;
+
+    document.getElementById('product5-price-val').setAttribute = product20.price;
+    document.getElementById('product5-price-ins').innerHTML = "$" + product20.price;
+
+
+
+    //document.location.reload();
+    document.getElementById('page_id').innerHTML = "16-20 of 20 products found";
+    document.getElementById('prv-page-go').disabled = false;
+    document.getElementById('next-page-go').disabled = true;
+
+};
+function next_page_go(){
+    page_number = page_number+1;
+    if(page_number==1){page_no_1();}
+    else if(page_number==2){page_no_2();}
+    else if(page_number==3){page_no_3();}
+    else{page_no_4();}
+    //document.location.reload();
+};
+
+/*
+
+if (page_number==1){
+    //Product Images
+    document.getElementById('product1-img').src=product1.imgURL;
+    document.getElementById('product2-img').src=product2.imgURL;
+    document.getElementById('product3-img').src=product3.imgURL;
+    document.getElementById('product4-img').src=product4.imgURL;
+    document.getElementById('product5-img').src=product5.imgURL;
+
+    //Product Names
+    document.getElementById('product1-name').innerHTML=product1.name;
+    document.getElementById('product2-name').innerHTML=product2.name;
+    document.getElementById('product3-name').innerHTML=product3.name;
+    document.getElementById('product4-name').innerHTML=product4.name;
+    document.getElementById('product5-name').innerHTML=product5.name;
+
+    //Product Colors
+    document.getElementById('product1-color1-text').textContent=product1.color1;
+    document.getElementById('product1-color2-text').textContent=product1.color2;
+    document.getElementById('product1-color3-text').textContent=product1.color3;
+
+    document.getElementById('product2-color1-text').textContent=product2.color1;
+    document.getElementById('product2-color2-text').textContent=product2.color2;
+    document.getElementById('product2-color3-text').textContent=product2.color3;
+
+
+    document.getElementById('product3-color1-text').textContent=product3.color1;
+    document.getElementById('product3-color2-text').textContent=product3.color2;
+    document.getElementById('product3-color3-text').textContent=product3.color3;
+
+
+    document.getElementById('product4-color1-text').textContent=product4.color1;
+    document.getElementById('product4-color2-text').textContent=product4.color2;
+    document.getElementById('product4-color3-text').textContent=product4.color3;
+
+
+    document.getElementById('product5-color1-text').textContent=product5.color1;
+    document.getElementById('product5-color2-text').textContent=product5.color2;
+    document.getElementById('product5-color3-text').textContent=product5.color3;
+
+    //Product Sizes
+    document.getElementById('product1-size1-text').textContent=product1.size1;
+    document.getElementById('product1-size2-text').textContent=product1.size2;
+    document.getElementById('product1-size3-text').textContent=product1.size3;
+
+    document.getElementById('product2-size1-text').textContent=product2.size1;
+    document.getElementById('product2-size2-text').textContent=product2.size2;
+    document.getElementById('product2-size3-text').textContent=product2.size3;
+
+    document.getElementById('product3-size1-text').textContent=product3.size1;
+    document.getElementById('product3-size2-text').textContent=product3.size2;
+    document.getElementById('product3-size3-text').textContent=product3.size3;
+
+    document.getElementById('product4-size1-text').textContent=product4.size1;
+    document.getElementById('product4-size2-text').textContent=product4.size2;
+    document.getElementById('product4-size3-text').textContent=product4.size3;
+
+    document.getElementById('product5-size1-text').textContent=product5.size1;
+    document.getElementById('product5-size2-text').textContent=product5.size2;
+    document.getElementById('product5-size3-text').textContent=product5.size3;
+
+    //Product Rating
+    document.getElementById('product1-rating').innerHTML=product1.rating;
+    document.getElementById('product2-rating').innerHTML=product2.rating;
+    document.getElementById('product3-rating').innerHTML=product3.rating;
+    document.getElementById('product4-rating').innerHTML=product4.rating;
+    document.getElementById('product5-rating').innerHTML=product5.rating;
+
+    //Product Price
+    document.getElementById('product1-price-val').setAttribute = product1.price;
+    document.getElementById('product1-price-ins').innerHTML = "$" + product1.price;
+
+    document.getElementById('product2-price-val').setAttribute = product2.price;
+    document.getElementById('product2-price-ins').innerHTML = "$" + product2.price;
+
+    document.getElementById('product3-price-val').setAttribute = product3.price;
+    document.getElementById('product3-price-ins').innerHTML = "$" + product3.price;
+
+    document.getElementById('product4-price-val').setAttribute = product4.price;
+    document.getElementById('product4-price-ins').innerHTML = "$" + product4.price;
+
+    document.getElementById('product5-price-val').setAttribute = product5.price;
+    document.getElementById('product5-price-ins').innerHTML = "$" + product5.price;
+    
+
 }
+else if(page_number==2){
+    //Product Images
+    document.getElementById('product1-img').src=product6.imgURL;
+    document.getElementById('product2-img').src=product7.imgURL;
+    document.getElementById('product3-img').src=product8.imgURL;
+    document.getElementById('product4-img').src=product9.imgURL;
+    document.getElementById('product5-img').src=product10.imgURL;
+
+    //Product Names
+    document.getElementById('product1-name').innerHTML=product6.name;
+    document.getElementById('product2-name').innerHTML=product7.name;
+    document.getElementById('product3-name').innerHTML=product8.name;
+    document.getElementById('product4-name').innerHTML=product9.name;
+    document.getElementById('product5-name').innerHTML=product10.name;
+
+    //Product Colors
+    document.getElementById('product1-color1-text').textContent=product6.color1;
+    document.getElementById('product1-color2-text').textContent=product6.color2;
+    document.getElementById('product1-color3-text').textContent=product6.color3;
+
+    document.getElementById('product2-color1-text').textContent=product7.color1;
+    document.getElementById('product2-color2-text').textContent=product7.color2;
+    document.getElementById('product2-color3-text').textContent=product7.color3;
+
+
+    document.getElementById('product3-color1-text').textContent=product8.color1;
+    document.getElementById('product3-color2-text').textContent=product8.color2;
+    document.getElementById('product3-color3-text').textContent=product8.color3;
+
+
+    document.getElementById('product4-color1-text').textContent=product9.color1;
+    document.getElementById('product4-color2-text').textContent=product9.color2;
+    document.getElementById('product4-color3-text').textContent=product9.color3;
+
+
+    document.getElementById('product5-color1-text').textContent=product10.color1;
+    document.getElementById('product5-color2-text').textContent=product10.color2;
+    document.getElementById('product5-color3-text').textContent=product10.color3;
+
+    //Product Sizes
+    document.getElementById('product1-size1-text').textContent=product6.size1;
+    document.getElementById('product1-size2-text').textContent=product6.size2;
+    document.getElementById('product1-size3-text').textContent=product6.size3;
+
+    document.getElementById('product2-size1-text').textContent=product7.size1;
+    document.getElementById('product2-size2-text').textContent=product7.size2;
+    document.getElementById('product2-size3-text').textContent=product7.size3;
+
+    document.getElementById('product3-size1-text').textContent=product8.size1;
+    document.getElementById('product3-size2-text').textContent=product8.size2;
+    document.getElementById('product3-size3-text').textContent=product8.size3;
+
+    document.getElementById('product4-size1-text').textContent=product9.size1;
+    document.getElementById('product4-size2-text').textContent=product9.size2;
+    document.getElementById('product4-size3-text').textContent=product9.size3;
+
+    document.getElementById('product5-size1-text').textContent=product10.size1;
+    document.getElementById('product5-size2-text').textContent=product10.size2;
+    document.getElementById('product5-size3-text').textContent=product10.size3;
+
+    //Product Rating
+    document.getElementById('product1-rating').innerHTML=product6.rating;
+    document.getElementById('product2-rating').innerHTML=product7.rating;
+    document.getElementById('product3-rating').innerHTML=product8.rating;
+    document.getElementById('product4-rating').innerHTML=product9.rating;
+    document.getElementById('product5-rating').innerHTML=product10.rating;
+
+    //Product Price
+    document.getElementById('product1-price-val').setAttribute = product6.price;
+    document.getElementById('product1-price-ins').innerHTML = "$" + product6.price;
+
+    document.getElementById('product2-price-val').setAttribute = product7.price;
+    document.getElementById('product2-price-ins').innerHTML = "$" + product7.price;
+
+    document.getElementById('product3-price-val').setAttribute = product8.price;
+    document.getElementById('product3-price-ins').innerHTML = "$" + product8.price;
+
+    document.getElementById('product4-price-val').setAttribute = product9.price;
+    document.getElementById('product4-price-ins').innerHTML = "$" + product9.price;
+
+    document.getElementById('product5-price-val').setAttribute = product10.price;
+    document.getElementById('product5-price-ins').innerHTML = "$" + product10.price;
+
+}
+else if(page_number==3){
+    //Product Images
+    document.getElementById('product1-img').src=product11.imgURL;
+    document.getElementById('product2-img').src=product12.imgURL;
+    document.getElementById('product3-img').src=product13.imgURL;
+    document.getElementById('product4-img').src=product14.imgURL;
+    document.getElementById('product5-img').src=product15.imgURL;
+
+    //Product Names
+    document.getElementById('product1-name').innerHTML=product11.name;
+    document.getElementById('product2-name').innerHTML=product12.name;
+    document.getElementById('product3-name').innerHTML=product13.name;
+    document.getElementById('product4-name').innerHTML=product14.name;
+    document.getElementById('product5-name').innerHTML=product15.name;
+
+    //Product Colors
+    document.getElementById('product1-color1-text').textContent=product11.color1;
+    document.getElementById('product1-color2-text').textContent=product11.color2;
+    document.getElementById('product1-color3-text').textContent=product11.color3;
+
+    document.getElementById('product2-color1-text').textContent=product12.color1;
+    document.getElementById('product2-color2-text').textContent=product12.color2;
+    document.getElementById('product2-color3-text').textContent=product12.color3;
+
+
+    document.getElementById('product3-color1-text').textContent=product13.color1;
+    document.getElementById('product3-color2-text').textContent=product13.color2;
+    document.getElementById('product3-color3-text').textContent=product13.color3;
+
+
+    document.getElementById('product4-color1-text').textContent=product14.color1;
+    document.getElementById('product4-color2-text').textContent=product14.color2;
+    document.getElementById('product4-color3-text').textContent=product14.color3;
+
+
+    document.getElementById('product5-color1-text').textContent=product15.color1;
+    document.getElementById('product5-color2-text').textContent=product15.color2;
+    document.getElementById('product5-color3-text').textContent=product15.color3;
+
+    //Product Sizes
+    document.getElementById('product1-size1-text').textContent=product11.size1;
+    document.getElementById('product1-size2-text').textContent=product11.size2;
+    document.getElementById('product1-size3-text').textContent=product11.size3;
+
+    document.getElementById('product2-size1-text').textContent=product12.size1;
+    document.getElementById('product2-size2-text').textContent=product12.size2;
+    document.getElementById('product2-size3-text').textContent=product12.size3;
+
+    document.getElementById('product3-size1-text').textContent=product13.size1;
+    document.getElementById('product3-size2-text').textContent=product13.size2;
+    document.getElementById('product3-size3-text').textContent=product13.size3;
+
+    document.getElementById('product4-size1-text').textContent=product14.size1;
+    document.getElementById('product4-size2-text').textContent=product14.size2;
+    document.getElementById('product4-size3-text').textContent=product14.size3;
+
+    document.getElementById('product5-size1-text').textContent=product15.size1;
+    document.getElementById('product5-size2-text').textContent=product15.size2;
+    document.getElementById('product5-size3-text').textContent=product15.size3;
+
+    //Product Rating
+    document.getElementById('product1-rating').innerHTML=product11.rating;
+    document.getElementById('product2-rating').innerHTML=product12.rating;
+    document.getElementById('product3-rating').innerHTML=product13.rating;
+    document.getElementById('product4-rating').innerHTML=product14.rating;
+    document.getElementById('product5-rating').innerHTML=product15.rating;
+
+    //Product Price
+    document.getElementById('product1-price-val').setAttribute = product11.price;
+    document.getElementById('product1-price-ins').innerHTML = "$" + product11.price;
+
+    document.getElementById('product2-price-val').setAttribute = product12.price;
+    document.getElementById('product2-price-ins').innerHTML = "$" + product12.price;
+
+    document.getElementById('product3-price-val').setAttribute = product13.price;
+    document.getElementById('product3-price-ins').innerHTML = "$" + product13.price;
+
+    document.getElementById('product4-price-val').setAttribute = product14.price;
+    document.getElementById('product4-price-ins').innerHTML = "$" + product14.price;
+
+    document.getElementById('product5-price-val').setAttribute = product15.price;
+    document.getElementById('product5-price-ins').innerHTML = "$" + product15.price;
+    
+    
+}
+else{
+    //Product Images
+    document.getElementById('product1-img').src=product16.imgURL;
+    document.getElementById('product2-img').src=product17.imgURL;
+    document.getElementById('product3-img').src=product18.imgURL;
+    document.getElementById('product4-img').src=product19.imgURL;
+    document.getElementById('product5-img').src=product20.imgURL;
+
+    //Product Names
+    document.getElementById('product1-name').innerHTML=product16.name;
+    document.getElementById('product2-name').innerHTML=product17.name;
+    document.getElementById('product3-name').innerHTML=product18.name;
+    document.getElementById('product4-name').innerHTML=product19.name;
+    document.getElementById('product5-name').innerHTML=product20.name;
+
+    //Product Colors
+    document.getElementById('product1-color1-text').textContent=product16.color1;
+    document.getElementById('product1-color2-text').textContent=product16.color2;
+    document.getElementById('product1-color3-text').textContent=product16.color3;
+
+    document.getElementById('product2-color1-text').textContent=product17.color1;
+    document.getElementById('product2-color2-text').textContent=product17.color2;
+    document.getElementById('product2-color3-text').textContent=product17.color3;
+
+
+    document.getElementById('product3-color1-text').textContent=product18.color1;
+    document.getElementById('product3-color2-text').textContent=product18.color2;
+    document.getElementById('product3-color3-text').textContent=product18.color3;
+
+
+    document.getElementById('product4-color1-text').textContent=product19.color1;
+    document.getElementById('product4-color2-text').textContent=product19.color2;
+    document.getElementById('product4-color3-text').textContent=product19.color3;
+
+
+    document.getElementById('product5-color1-text').textContent=product20.color1;
+    document.getElementById('product5-color2-text').textContent=product20.color2;
+    document.getElementById('product5-color3-text').textContent=product20.color3;
+
+    //Product Sizes
+    document.getElementById('product1-size1-text').textContent=product16.size1;
+    document.getElementById('product1-size2-text').textContent=product16.size2;
+    document.getElementById('product1-size3-text').textContent=product16.size3;
+
+    document.getElementById('product2-size1-text').textContent=product17.size1;
+    document.getElementById('product2-size2-text').textContent=product17.size2;
+    document.getElementById('product2-size3-text').textContent=product17.size3;
+
+    document.getElementById('product3-size1-text').textContent=product18.size1;
+    document.getElementById('product3-size2-text').textContent=product18.size2;
+    document.getElementById('product3-size3-text').textContent=product18.size3;
+
+    document.getElementById('product4-size1-text').textContent=product19.size1;
+    document.getElementById('product4-size2-text').textContent=product19.size2;
+    document.getElementById('product4-size3-text').textContent=product19.size3;
+
+    document.getElementById('product5-size1-text').textContent=product20.size1;
+    document.getElementById('product5-size2-text').textContent=product20.size2;
+    document.getElementById('product5-size3-text').textContent=product20.size3;
+
+    //Product Rating
+    document.getElementById('product1-rating').innerHTML=product16.rating;
+    document.getElementById('product2-rating').innerHTML=product17.rating;
+    document.getElementById('product3-rating').innerHTML=product18.rating;
+    document.getElementById('product4-rating').innerHTML=product19.rating;
+    document.getElementById('product5-rating').innerHTML=product20.rating;
+
+    //Product Price
+    document.getElementById('product1-price-val').setAttribute = product16.price;
+    document.getElementById('product1-price-ins').innerHTML = "$" + product16.price;
+
+    document.getElementById('product2-price-val').setAttribute = product17.price;
+    document.getElementById('product2-price-ins').innerHTML = "$" + product17.price;
+
+    document.getElementById('product3-price-val').setAttribute = product18.price;
+    document.getElementById('product3-price-ins').innerHTML = "$" + product18.price;
+
+    document.getElementById('product4-price-val').setAttribute = product19.price;
+    document.getElementById('product4-price-ins').innerHTML = "$" + product19.price;
+
+    document.getElementById('product5-price-val').setAttribute = product20.price;
+    document.getElementById('product5-price-ins').innerHTML = "$" + product20.price;
+
+
+}
+*/

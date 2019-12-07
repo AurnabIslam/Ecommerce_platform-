@@ -163,10 +163,10 @@
                   <del>$50.00</del> 
                   <ins id="product1-price-ins">$39.00</ins>
                 </data>
-                <button type="button">
+                <button class="product-selection-btn" type="button">
                   <span class="material-icons">add_shopping_cart</span> Add to Cart
                 </button>
-                <button type="button"><span class="material-icons">favorite</span></button>
+                <button class="product-selection-btn" type="button"><span class="material-icons">favorite</span></button>
                 <a href="#">see more</a>
               </footer>
             </form>
@@ -208,8 +208,8 @@
                   <del>$50.00</del> 
                   <ins id="product2-price-ins">$39.00</ins>
                 </data>
-                <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-                <button type="button"><span class="material-icons">favorite</span></button>
+                <button class="product-selection-btn" type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
+                <button class="product-selection-btn" type="button"><span class="material-icons">favorite</span></button>
                 <a href="#">see more</a>
               </footer>
             </form>
@@ -250,8 +250,8 @@
                   <del>$50.00</del> 
                   <ins id="product3-price-ins">$39.00</ins>
                 </data>
-                <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-                <button type="button"><span class="material-icons">favorite</span></button>
+                <button class="product-selection-btn" type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
+                <button class="product-selection-btn" type="button"><span class="material-icons">favorite</span></button>
                 <a href="#">see more</a>
               </footer>
             </form>
@@ -260,10 +260,10 @@
           <!-- Product 4 -->
           <article class="product">
             <header>
-              <img class="product-img" id="product4-img" src="img/product.jpg" alt="Product Image">
-            </header>
             <h3 id="product4-name">Product Name</h3>
             <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
+            <img class="product-img" id="product4-img" src="img/product.jpg" alt="Product Image">
+            </header>
             <form>
               <fieldset class="product-field">
                 <legend>Colours</legend>
@@ -292,8 +292,8 @@
                   <del>$50.00</del> 
                   <ins id="product4-price-ins">$39.00</ins>
                 </data>
-                <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-                <button type="button"><span class="material-icons">favorite</span></button>
+                <button class="product-selection-btn" type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
+                <button class="product-selection-btn" type="button"><span class="material-icons">favorite</span></button>
                 <a href="#">see more</a>
               </footer>
             </form>
@@ -335,8 +335,8 @@
                   <del>$50.00</del> 
                   <ins id="product5-price-ins">$39.00</ins>
                 </data>
-                <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-                <button type="button"><span class="material-icons">favorite</span></button>
+                <button class="product-selection-btn" type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
+                <button class="product-selection-btn" type="button"><span class="material-icons">favorite</span></button>
                 <a href="#">see more</a>
               </footer>
             </form>
@@ -345,34 +345,44 @@
       </section>
 
       <footer>
-        <p>1-5 of 20 products found</p>
+        <p id="page_id">1-5 of 20 products found</p>
         <nav aria-label="Product Pages">
-          <a id="prv-page-go" href="#" aria-label="Previous page">prev</a>
+          <!--
+            <a id="prv-page-go" href="index.html" aria-label="Previous page">prev</a>
           <ol>
             <li><a id="page-no-1" href="index.html" aria-label="Current Page, Page 1" aria-current="true">1</a></li>
             <li><a id="page-no-2" href="index.html" aria-label="Page 2">2</a></li>
             <li><a id="page-no-3" href="index.html" aria-label="Page 3">3</a></li>
             <li><a id="page-no-4" href="index.html" aria-label="Page 4">4</a></li>
           </ol>
-          <a id="next-page-go" href="#" aria-label="Next page">next</a>
+          <a id="next-page-go" href="index.html" aria-label="Next page">next</a>
+          -->
+          <button id="prv-page-go" onclick="prv_page_go()">Previous</button>
+          <button id="page-no-1" onclick="page_no_1()">1</button>
+          <button id="page-no-2" onclick="page_no_2()">2</button>
+          <button id="page-no-3" onclick="page_no_3()">3</button>
+          <button id="page-no-4" onclick="page_no_4()">4</button>
+          <button id="next-page-go" onclick="next_page_go()">Next</button>
         </nav>
+        
+        <p>&copy; Copyright, 1991.</p>
+        <nav aria-label="Legal">
+          <ul>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Accessibility Policy</a></li>
+          </ul>
+        </nav>
+        <ul>
+          <li><a href="#"><span class="material-icons">face</span> Facebook</a></li>
+          <li><a href="#"><span class="material-icons">camera_alt</span> Instagram</a></li>
+          <li><a href="#"><span class="material-icons">alternate_email</span> Twitter</a></li>
+        </ul>
       </footer>
     </main>
 
     <footer>
-      <p>&copy; Copyright, 1991.</p>
-      <nav aria-label="Legal">
-        <ul>
-          <li><a href="#">Terms of Use</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Accessibility Policy</a></li>
-        </ul>
-      </nav>
-      <ul>
-        <li><a href="#"><span class="material-icons">face</span> Facebook</a></li>
-        <li><a href="#"><span class="material-icons">camera_alt</span> Instagram</a></li>
-        <li><a href="#"><span class="material-icons">alternate_email</span> Twitter</a></li>
-      </ul>
+      
     </footer>
     
     <!-- [Remove all default comments in this document after reading] -->
