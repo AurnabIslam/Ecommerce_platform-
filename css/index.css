@@ -35,7 +35,8 @@ h3{
 }
 .product-img{
     height: auto;
-    width: 60%;
+    width: 80%;
+    margin-left: 1em;
 }
 .product-field{
     width: 50%;
@@ -91,6 +92,9 @@ h3{
     border-radius: 7px;
     width: 15em;
     padding: 0.2em 0.7em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    
 }
 .product-selection-btn:hover{
     background: #333;
@@ -112,3 +116,16 @@ legend{
     color: #fff;
     padding: 0.1em 0.7em;
 }
+/*Hamburger Menu Code Starts Here*/
+#hamburger_menu{
+	background: #757575;
+	color: #fff;
+	padding: 0.4em 0.8em;
+	border-radius: 7px;
+	size: 1em;
+}
+#hamburger_menu span{
+	font-size: 2.5em;
+}
+
+/*Ends Here*/

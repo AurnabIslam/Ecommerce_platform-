@@ -631,6 +631,23 @@ function next_page_go(){
     //document.location.reload();
 };
 
+
+
+//Hamburger Menu
+
+function hamburgerMenu() {
+    var x = document.getElementById("nav-bar");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  } 
+
+//Ends Here
+
+
+
 /*
 
 if (page_number==1){
