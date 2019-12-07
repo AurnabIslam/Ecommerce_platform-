@@ -61,7 +61,7 @@ var product5 = {            //Product 5
 };
 var product6 = {            //Product 6
     name:'Shirt #6',
-    imgURL:'#',
+    imgURL:'https://colorlib.com/wp/wp-content/uploads/sites/2/27_t-shirt-mockups.jpg',
     color1:'Black',
     color2:'Red',
     color3:'Blue',
@@ -73,7 +73,7 @@ var product6 = {            //Product 6
 };
 var product7 = {            //Product 7
     name:'Shirt #7',
-    imgURL:'#',
+    imgURL:'https://colorlib.com/wp/wp-content/uploads/sites/2/28_t-shirt-mockups.jpg',
     color1:'Grey',
     color2:'Black',
     color3:'Blue',
@@ -85,7 +85,7 @@ var product7 = {            //Product 7
 };
 var product8 = {            //Product 8
     name:'Shirt #8',
-    imgURL:'#',
+    imgURL:'https://colorlib.com/wp/wp-content/uploads/sites/2/29_t-shirt-mockups.jpg',
     color1:'Black',
     color2:'White',
     color3:'Grey',
@@ -97,7 +97,7 @@ var product8 = {            //Product 8
 };
 var product9 = {            //Product 9
     name:'Shirt #9',
-    imgURL:'#',
+    imgURL:'https://colorlib.com/wp/wp-content/uploads/sites/2/30_t-shirt-mockups.jpg',
     color1:'Red',
     color2:'Blue',
     color3:'White',
@@ -109,7 +109,7 @@ var product9 = {            //Product 9
 };
 var product10 = {            //Product 10
     name:'Shirt #10',
-    imgURL:'#',
+    imgURL:'https://colorlib.com/wp/wp-content/uploads/sites/2/free-t-shirt-mockup-women.jpg',
     color1:'Black',
     color2:'White',
     color3:'Grey',
@@ -121,7 +121,7 @@ var product10 = {            //Product 10
 };
 var product11 = {            //Product 11
     name:'Shirt #11',
-    imgURL:'#',
+    imgURL:'https://colorlib.com/wp/wp-content/uploads/sites/2/Free-White-T-shirt-Psd-Mockup.jpg',
     color1:'Grey',
     color2:'Red',
     color3:'Blue',
@@ -133,7 +133,7 @@ var product11 = {            //Product 11
 };
 var product12 = {            //Product 12
     name:'Shirt #12',
-    imgURL:'#',
+    imgURL:'https://colorlib.com/wp/wp-content/uploads/sites/2/guy-T-shirt-Mockup.jpg',
     color1:'Black',
     color2:'White',
     color3:'Grey',
@@ -145,7 +145,7 @@ var product12 = {            //Product 12
 };
 var product13 = {            //Product 13
     name:'Shirt #13',
-    imgURL:'#',
+    imgURL:'https://colorlib.com/wp/wp-content/uploads/sites/2/Free-Round-Neck-Tshirt-Mockup.jpg',
     color1:'White',
     color2:'Red',
     color3:'Blue',
@@ -157,7 +157,7 @@ var product13 = {            //Product 13
 };
 var product14 = {            //Product 14
     name:'Shirt #14',
-    imgURL:'#',
+    imgURL:'https://colorlib.com/wp/wp-content/uploads/sites/2/Free-Acid-Wash-Tee-Mockup_Michael-Hoss.jpg',
     color1:'White',
     color2:'Blue',
     color3:'Black',
@@ -169,7 +169,7 @@ var product14 = {            //Product 14
 };
 var product15= {            //Product 15
     name:'Shirt #15',
-    imgURL:'#',
+    imgURL:'https://colorlib.com/wp/wp-content/uploads/sites/2/V-Neck-Shirt-Free-Mockup.jpg',
     color1:'Grey',
     color2:'Red',
     color3:'Blue',
@@ -181,7 +181,7 @@ var product15= {            //Product 15
 };
 var product16 = {            //Product 16
     name:'Shirt #16',
-    imgURL:'#',
+    imgURL:'https://colorlib.com/wp/wp-content/uploads/sites/2/free-shirt-mockup.jpg',
     color1:'Black',
     color2:'Red',
     color3:'Blue',
@@ -193,7 +193,7 @@ var product16 = {            //Product 16
 };
 var product17 = {            //Product 17
     name:'Shirt #17',
-    imgURL:'#',
+    imgURL:'https://colorlib.com/wp/wp-content/uploads/sites/2/free-t-shirt-mockup.jpg',
     color1:'Grey',
     color2:'Black',
     color3:'Blue',
@@ -205,7 +205,7 @@ var product17 = {            //Product 17
 };
 var product18 = {            //Product 18
     name:'Shirt #18',
-    imgURL:'#',
+    imgURL:'https://colorlib.com/wp/wp-content/uploads/sites/2/men-T-Shirt-Mockup.jpg',
     color1:'Black',
     color2:'White',
     color3:'Grey',
@@ -217,7 +217,7 @@ var product18 = {            //Product 18
 };
 var product19 = {            //Product 19
     name:'Shirt #19',
-    imgURL:'#',
+    imgURL:'https://colorlib.com/wp/wp-content/uploads/sites/2/free-tshirt-mockup-psd.jpg',
     color1:'Red',
     color2:'Blue',
     color3:'White',
@@ -229,7 +229,7 @@ var product19 = {            //Product 19
 };
 var product20 = {            //Product 20
     name:'Shirt #20',
-    imgURL:'#',
+    imgURL:'https://colorlib.com/wp/wp-content/uploads/sites/2/Free-Nice-White-Hanger-Tshirt-Presentation-Mockup.jpg',
     color1:'Black',
     color2:'White',
     color3:'Grey',

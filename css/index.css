@@ -96,3 +96,19 @@ h3{
     background: #333;
     color: #fff;
 }
+article{
+    border-radius: 1em;
+}
+fieldset{
+    margin-top: 1em;
+    background: #757575;
+    color: #fff;
+    border-radius: 1em;
+}
+legend{
+    border: 0.2em solid #757575;
+    border-radius: 1em;
+    background: #757575;
+    color: #fff;
+    padding: 0.1em 0.7em;
+}
