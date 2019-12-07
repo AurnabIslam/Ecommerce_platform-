@@ -8,7 +8,7 @@ var product1 = {
     size1:'M',
     size2:'L',
     size3:'XL',
-    rating:'4',
+    rating:'4.5',
     price: 39.99
 };
 var product2 = {
@@ -20,7 +20,7 @@ var product2 = {
     size1:'XS',
     size2:'S',
     size3:'M',
-    rating:'4',
+    rating:'3.5',
     price: 19.99
 };
 var product3 = {
@@ -32,7 +32,7 @@ var product3 = {
     size1:'S',
     size2:'M',
     size3:'L',
-    rating:'4',
+    rating:'4.2',
     price: 29.99
 };
 var product4 = {
@@ -44,7 +44,7 @@ var product4 = {
     size1:'S',
     size2:'M',
     size3:'L',
-    rating:'4',
+    rating:'3.9',
     price: 25.99
 };
 var product5 = {
@@ -56,7 +56,7 @@ var product5 = {
     size1:'M',
     size2:'L',
     size3:'XL',
-    rating:'4',
+    rating:'4.3',
     price: 35.99
 };
 var product6 = {
@@ -167,7 +167,7 @@ var product14 = {
     rating:'4',
     price: 25.99
 };
-var product15 = {
+var product15= {
     name:'Shirt #15',
     imgURL:'#',
     color1:'Grey',
@@ -298,3 +298,26 @@ document.getElementById('product4-size3-text').textContent=product4.size3;
 document.getElementById('product5-size1-text').textContent=product5.size1;
 document.getElementById('product5-size2-text').textContent=product5.size2;
 document.getElementById('product5-size3-text').textContent=product5.size3;
+
+//Product Rating
+document.getElementById('product1-rating').innerHTML=product1.rating;
+document.getElementById('product2-rating').innerHTML=product2.rating;
+document.getElementById('product3-rating').innerHTML=product3.rating;
+document.getElementById('product4-rating').innerHTML=product4.rating;
+document.getElementById('product5-rating').innerHTML=product5.rating;
+
+//Product Price
+document.getElementById('product1-price-val').setAttribute = product1.price;
+document.getElementById('product1-price-ins').innerHTML = "$" + product1.price;
+
+document.getElementById('product2-price-val').setAttribute = product2.price;
+document.getElementById('product2-price-ins').innerHTML = "$" + product2.price;
+
+document.getElementById('product3-price-val').setAttribute = product3.price;
+document.getElementById('product3-price-ins').innerHTML = "$" + product3.price;
+
+document.getElementById('product4-price-val').setAttribute = product4.price;
+document.getElementById('product4-price-ins').innerHTML = "$" + product4.price;
+
+document.getElementById('product5-price-val').setAttribute = product5.price;
+document.getElementById('product5-price-ins').innerHTML = "$" + product5.price;
