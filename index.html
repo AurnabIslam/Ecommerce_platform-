@@ -48,9 +48,9 @@
             </form>
       
             <!-- Additional functionality or links -->
-            <ul>
-              <li><button><span class="material-icons">favorite_border</span></button></li>
-              <li><button><span class="material-icons">shopping_cart</span></button></li>
+            <ul id="btn-plcmnt">
+              <li><button class="sml-btn"><span class="material-icons">favorite_border</span></button></li>
+              <li><button class="sml-btn"><span class="material-icons">shopping_cart</span></button></li>
             </ul>
           </header>          
         <!-- Filtering product form -->
@@ -130,11 +130,11 @@
         <div id="products">
           <!-- Product 1 -->
           <article class="product">
+              <h3 id="product1-name">Product Name</h3>
+              <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>  
             <header>
               <img class="product-img" id="product1-img" src="img/product.jpg" alt="Product Image">
             </header>
-            <h3 id="product1-name">Product Name</h3>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
             <form>
               <fieldset class="product-field">
                 <legend>Colours</legend>
@@ -175,10 +175,11 @@
           <!-- Product 2 -->
           <article class="product">
             <header>
+              <h3 id="product2-name">Product Name</h3>
+              <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
+              
               <img class="product-img" id="product2-img" src="img/product.jpg" alt="Product Image">
             </header>
-            <h3 id="product2-name">Product Name</h3>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
             <form>
               <fieldset class="product-field">
                 <legend>Colours</legend>
@@ -217,10 +218,10 @@
           <!-- Product 3 -->
           <article class="product">
             <header>
-              <img class="product-img" id="product3-img" src="img/product.jpg" alt="Product Image">
+                <h3 id="product3-name">Product Name</h3>
+                <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
+                <img class="product-img" id="product3-img" src="img/product.jpg" alt="Product Image">
             </header>
-            <h3 id="product3-name">Product Name</h3>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
             <form>
               <fieldset class="product-field">
                 <legend>Colours</legend>
@@ -301,10 +302,11 @@
           <!-- Product 5 -->
           <article class="product">
             <header>
+              <h3 id="product5-name">Product Name</h3>
+              <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
+              
               <img class="product-img" id="product5-img" src="img/product.jpg" alt="Product Image">
             </header>
-            <h3 id="product5-name">Product Name</h3>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
             <form>
               <fieldset class="product-field">
                 <legend>Colours</legend>
@@ -345,14 +347,14 @@
       <footer>
         <p>1-5 of 20 products found</p>
         <nav aria-label="Product Pages">
-          <a href="#" aria-label="Previous page">prev</a>
+          <a id="prv-page-go" href="#" aria-label="Previous page">prev</a>
           <ol>
-            <li><a href="#" aria-label="Current Page, Page 1" aria-current="true">1</a></li>
-            <li><a href="#" aria-label="Page 2">2</a></li>
-            <li><a href="#" aria-label="Page 3">3</a></li>
-            <li><a href="#" aria-label="Page 4">4</a></li>
+            <li><a id="page-no-1" href="index.html" aria-label="Current Page, Page 1" aria-current="true">1</a></li>
+            <li><a id="page-no-2" href="index.html" aria-label="Page 2">2</a></li>
+            <li><a id="page-no-3" href="index.html" aria-label="Page 3">3</a></li>
+            <li><a id="page-no-4" href="index.html" aria-label="Page 4">4</a></li>
           </ol>
-          <a href="#" aria-label="Next page">next</a>
+          <a id="next-page-go" href="#" aria-label="Next page">next</a>
         </nav>
       </footer>
     </main>

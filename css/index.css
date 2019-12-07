@@ -44,3 +44,26 @@ h3{
     position: absolute;
     width: 20%;
 }
+.search-field{
+    display: inline;
+}
+#search-btn{
+    display: inline-block;
+    background: #757575;
+    color: #fff;
+    border-radius: 7px;
+    margin: 0;
+    padding: 0.2em 0.7em;
+}
+.sml-btn{
+    background: #757575;
+    color: #fff;
+    border-radius: 7px;
+    width: 10em;
+    padding: 0.2em 0.7em;
+}
+#btn-plcmnt{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
