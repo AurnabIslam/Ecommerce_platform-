@@ -127,5 +127,20 @@ legend{
 #hamburger_menu span{
 	font-size: 2.5em;
 }
+#nav-bar-area{
+    background: #757575;
+    color: #fff;
+    width: 15%;
+    border-radius: 7px;
+    font-size: 1.05em;
+}
+#nav-bar-area a:link, a:visited{
+    color: #fff;
+}
 
 /*Ends Here*/
+
+
+.default_select_option{
+    display: none;
+}

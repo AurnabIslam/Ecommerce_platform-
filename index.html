@@ -26,17 +26,17 @@
       
             <!-- Navigation menu and toggle button (example) -->
             <nav id="nav-bar" aria-label="Primary">
-              <ul>
-                <li><a href="#">Webpage</a>
+              <ul id="nav-bar-area">
+                <li><a href="#">Recommended</a>
                   <ul>
-                    <li><a href="#">Subpage</a></li>
-                    <li><a href="#">Subpage</a></li>
-                    <li><a href="#">Subpage</a></li>
+                    <li><a href="#">T-Shirts</a></li>
+                    <li><a href="#">Shirts</a></li>
+                    <li><a href="#">Jackets</a></li>
                   </ul>
                 </li>
-                <li><a href="#">Webpage</a></li>
-                <li><a href="#">Webpage</a></li>
-                <li><a href="#">Webpage</a></li>
+                <li><a href="#">Surprise Me!</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
               </ul>
             </nav>
       
@@ -60,6 +60,7 @@
               <fieldset class="filters">
                 <label for="sort">Show</label>
                 <select name="sort" id="sort">
+                  <option selected="selected" class="default_select_option">Select Sort Type</option>
                   <option value="price-high">Price, highest to lowest</option>
                   <option value="price-low">Price, lowest to highest</option>
                   <option value="newest">Newest releases</option>
@@ -386,8 +387,8 @@
       
     </footer>
     
-    <!-- [Remove all default comments in this document after reading] -->
-
+    
     <script src="js/index.js"></script>
+
   </body>
 </html>
