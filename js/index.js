@@ -68,7 +68,7 @@ var product6 = {            //Product 6
     size1:'M',
     size2:'L',
     size3:'XL',
-    rating:'4',
+    rating:'4.5',
     price: 39.99
 };
 var product7 = {            //Product 7
@@ -80,7 +80,7 @@ var product7 = {            //Product 7
     size1:'M',
     size2:'L',
     size3:'XL',
-    rating:'4',
+    rating:'4.1',
     price: 29.99
 };
 var product8 = {            //Product 8
@@ -92,7 +92,7 @@ var product8 = {            //Product 8
     size1:'XS',
     size2:'S',
     size3:'M',
-    rating:'4',
+    rating:'3.8',
     price: 25.99
 };
 var product9 = {            //Product 9
@@ -116,7 +116,7 @@ var product10 = {            //Product 10
     size1:'S',
     size2:'M',
     size3:'L',
-    rating:'4',
+    rating:'3.9',
     price: 29.99
 };
 var product11 = {            //Product 11
@@ -128,7 +128,7 @@ var product11 = {            //Product 11
     size1:'M',
     size2:'L',
     size3:'XL',
-    rating:'4',
+    rating:'4.4',
     price: 39.99
 };
 var product12 = {            //Product 12
@@ -140,7 +140,7 @@ var product12 = {            //Product 12
     size1:'XS',
     size2:'S',
     size3:'M',
-    rating:'4',
+    rating:'3.6',
     price: 19.99
 };
 var product13 = {            //Product 13
@@ -164,7 +164,7 @@ var product14 = {            //Product 14
     size1:'S',
     size2:'M',
     size3:'L',
-    rating:'4',
+    rating:'3.7',
     price: 25.99
 };
 var product15= {            //Product 15
@@ -176,7 +176,7 @@ var product15= {            //Product 15
     size1:'M',
     size2:'L',
     size3:'XL',
-    rating:'4',
+    rating:'4.2',
     price: 35.99
 };
 var product16 = {            //Product 16
@@ -188,7 +188,7 @@ var product16 = {            //Product 16
     size1:'M',
     size2:'L',
     size3:'XL',
-    rating:'4',
+    rating:'4.5',
     price: 39.99
 };
 var product17 = {            //Product 17
@@ -200,7 +200,7 @@ var product17 = {            //Product 17
     size1:'M',
     size2:'L',
     size3:'XL',
-    rating:'4',
+    rating:'3.8',
     price: 29.99
 };
 var product18 = {            //Product 18
@@ -212,7 +212,7 @@ var product18 = {            //Product 18
     size1:'XS',
     size2:'S',
     size3:'M',
-    rating:'4',
+    rating:'3.6',
     price: 25.99
 };
 var product19 = {            //Product 19
@@ -224,7 +224,7 @@ var product19 = {            //Product 19
     size1:'S',
     size2:'M',
     size3:'L',
-    rating:'4',
+    rating:'4.2',
     price: 35.99
 };
 var product20 = {            //Product 20
@@ -236,7 +236,7 @@ var product20 = {            //Product 20
     size1:'S',
     size2:'M',
     size3:'L',
-    rating:'4',
+    rating:'4.2',
     price: 35.99
 };
 
