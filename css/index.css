@@ -152,3 +152,12 @@ legend{
 .default_select_option{
     display: none;
 }
+
+
+#test-jq{
+    background: #333;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 7px;
+    padding: 1em;
+}
