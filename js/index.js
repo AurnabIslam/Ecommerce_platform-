@@ -240,6 +240,252 @@ var product20 = {            //Product 20
     price: 35.99
 };
 
+// All Products in JSON
+
+
+var all_products = [
+        {
+            "Product": "1",
+            "Product Name": "Shirt #1",
+            "Color 1": "Grey",
+            "Color 2": "Red",
+            "Color 3": "Blue",
+            "Size 1": "M",
+            "Size 2": "L",
+            "Size 3": "XL",
+            "Rating": "4.5",
+            "Price": "39.99"
+        },
+        {
+            "Product": "2",
+            "Product Name": "Shirt #2",
+            "Color 1": "Black",
+            "Color 2": "White",
+            "Color 3": "Grey",
+            "Size 1": "XS",
+            "Size 2": "S",
+            "Size 3": "M",
+            "Rating": "3.5",
+            "Price": "19.99"
+        },
+        {
+            "Product": "3",
+            "Product Name": "Shirt #3",
+            "Color 1": "White",
+            "Color 2": "Red",
+            "Color 3": "Blue",
+            "Size 1": "S",
+            "Size 2": "M",
+            "Size 3": "L",
+            "Rating": "4.2",
+            "Price": "29.99"
+        },
+        {
+            "Product": "4",
+            "Product Name": "Shirt #4",
+            "Color 1": "White",
+            "Color 2": "Blue",
+            "Color 3": "Black",
+            "Size 1": "S",
+            "Size 2": "M",
+            "Size 3": "L",
+            "Rating": "3.9",
+            "Price": "25.99"
+        },
+        {
+            "Product": "5",
+            "Product Name": "Shirt #5",
+            "Color 1": "Grey",
+            "Color 2": "Red",
+            "Color 3": "Blue",
+            "Size 1": "M",
+            "Size 2": "L",
+            "Size 3": "XL",
+            "Rating": "4.3",
+            "Price": "35.99"
+        },
+        {
+            "Product": "6",
+            "Product Name": "Shirt #6",
+            "Color 1": "Black",
+            "Color 2": "Red",
+            "Color 3": "Blue",
+            "Size 1": "M",
+            "Size 2": "L",
+            "Size 3": "XL",
+            "Rating": "4.5",
+            "Price": "39.99"
+        },
+        {
+            "Product": "7",
+            "Product Name": "Shirt #7",
+            "Color 1": "Grey",
+            "Color 2": "Black",
+            "Color 3": "Blue",
+            "Size 1": "M",
+            "Size 2": "L",
+            "Size 3": "XL",
+            "Rating": "4.1",
+            "Price": "29.99"
+        },
+        {
+            "Product": "8",
+            "Product Name": "Shirt #8",
+            "Color 1": "Black",
+            "Color 2": "White",
+            "Color 3": "Grey",
+            "Size 1": "XS",
+            "Size 2": "S",
+            "Size 3": "M",
+            "Rating": "3.8",
+            "Price": "25.99"
+        },
+        {
+            "Product": "9",
+            "Product Name": "Shirt #9",
+            "Color 1": "Red",
+            "Color 2": "White",
+            "Color 3": "Blue",
+            "Size 1": "S",
+            "Size 2": "M",
+            "Size 3": "L",
+            "Rating": "4",
+            "Price": "29.99"
+        },
+        {
+            "Product": "10",
+            "Product Name": "Shirt #10",
+            "Color 1": "Black",
+            "Color 2": "White",
+            "Color 3": "Grey",
+            "Size 1": "S",
+            "Size 2": "M",
+            "Size 3": "L",
+            "Rating": "3.9",
+            "Price": "29.99"
+        },
+        {
+            "Product": "11",
+            "Product Name": "Shirt #11",
+            "Color 1": "Grey",
+            "Color 2": "Red",
+            "Color 3": "Blue",
+            "Size 1": "M",
+            "Size 2": "L",
+            "Size 3": "XL",
+            "Rating": "4.4",
+            "Price": "39.99"
+        },
+        {
+            "Product": "12",
+            "Product Name": "Shirt #12",
+            "Color 1": "Black",
+            "Color 2": "White",
+            "Color 3": "Grey",
+            "Size 1": "XS",
+            "Size 2": "S",
+            "Size 3": "M",
+            "Rating": "3.6",
+            "Price": "19.99"
+        },
+        {
+            "Product": "13",
+            "Product Name": "Shirt #13",
+            "Color 1": "White",
+            "Color 2": "Red",
+            "Color 3": "Blue",
+            "Size 1": "S",
+            "Size 2": "M",
+            "Size 3": "L",
+            "Rating": "4",
+            "Price": "29.99"
+        },
+        {
+            "Product": "14",
+            "Product Name": "Shirt #14",
+            "Color 1": "White",
+            "Color 2": "Blue",
+            "Color 3": "Black",
+            "Size 1": "S",
+            "Size 2": "M",
+            "Size 3": "L",
+            "Rating": "3.7",
+            "Price": "25.99"
+        },
+        {
+            "Product": "15",
+            "Product Name": "Shirt #15",
+            "Color 1": "Grey",
+            "Color 2": "Red",
+            "Color 3": "Blue",
+            "Size 1": "M",
+            "Size 2": "L",
+            "Size 3": "XL",
+            "Rating": "4.2",
+            "Price": "35.99"
+        },
+        {
+            "Product": "16",
+            "Product Name": "Shirt #16",
+            "Color 1": "Black",
+            "Color 2": "Red",
+            "Color 3": "Blue",
+            "Size 1": "M",
+            "Size 2": "L",
+            "Size 3": "XL",
+            "Rating": "4.5",
+            "Price": "39.99"
+        },
+        {
+            "Product": "17",
+            "Product Name": "Shirt #17",
+            "Color 1": "Grey",
+            "Color 2": "Black",
+            "Color 3": "Blue",
+            "Size 1": "M",
+            "Size 2": "L",
+            "Size 3": "XL",
+            "Rating": "3.8",
+            "Price": "29.99"
+        },
+        {
+            "Product": "18",
+            "Product Name": "Shirt #18",
+            "Color 1": "Black",
+            "Color 2": "White",
+            "Color 3": "Grey",
+            "Size 1": "XS",
+            "Size 2": "S",
+            "Size 3": "M",
+            "Rating": "3.6",
+            "Price": "25.99"
+        },
+        {
+            "Product": "19",
+            "Product Name": "Shirt #19",
+            "Color 1": "Red",
+            "Color 2": "Blue",
+            "Color 3": "White",
+            "Size 1": "S",
+            "Size 2": "M",
+            "Size 3": "L",
+            "Rating": "4.2",
+            "Price": "35.99"
+        },
+        {
+            "Product": "20",
+            "Product Name": "Shirt #20",
+            "Color 1": "Black",
+            "Color 2": "White",
+            "Color 3": "Grey",
+            "Size 1": "S",
+            "Size 2": "M",
+            "Size 3": "L",
+            "Rating": "4.2",
+            "Price": "35.99"
+        }
+    ]
+
 
 //Variables
 var switch_sort_price = document.getElementById('sort').value;
@@ -259,18 +505,9 @@ function prv_page_go(){
 function page_no_1(){
     page_number = 1;
 
-    switch (switch_sort_price) {
-        case 'price-high':
-            sort_highlow_1_5();
-            break;
-        case 'price-low':
-            sort_lowhigh_1_5();
-            break;
-        default:
-            default_products_1_5();
-            break;
-    }
-    
+    if(switch_sort_price =='price-high'){sort_highlow_1_5();}
+    else if(page_number =='price-low'){sort_lowhigh_1_5();}
+    else{default_products_1_5();}
 
     //document.location.reload();
     document.getElementById('page_id').innerHTML = "1-5 of 20 products found";
@@ -281,18 +518,10 @@ function page_no_1(){
 function page_no_2(){
     page_number = 2;
 
+    if(switch_sort_price =='price-high'){sort_highlow_6_10();}
+    else if(page_number =='price-low'){sort_lowhigh_6_10();}
+    else{default_products_6_10();}
 
-    switch (switch_sort_price) {
-        case 'price-high':
-            sort_highlow_6_10();
-            break;
-        case 'price-low':
-            sort_lowhigh_6_10();
-            break;
-        default:
-            default_products_6_10();
-            break;
-    }
     //document.location.reload();
     document.getElementById('page_id').innerHTML = "6-10 of 20 products found";
     document.getElementById('prv-page-go').disabled = false;
@@ -302,18 +531,11 @@ function page_no_2(){
 function page_no_3(){
     page_number = 3;
 
+    if(switch_sort_price =='price-high'){sort_highlow_11_15();}
+    else if(page_number =='price-low'){sort_lowhigh_11_15();}
+    else{default_products_11_15();}
 
-    switch (switch_sort_price) {
-        case 'price-high':
-            sort_highlow_11_15();
-            break;
-        case 'price-low':
-            sort_lowhigh_11_15();
-            break;
-        default:
-            default_products_11_15();
-            break;
-    }
+
     //document.location.reload();
     document.getElementById('page_id').innerHTML = "11-15 of 20 products found";
     document.getElementById('prv-page-go').disabled = false;
@@ -323,18 +545,11 @@ function page_no_3(){
 function page_no_4(){
     page_number = 4;
 
+    if(switch_sort_price =='price-high'){sort_highlow_16_20();}
+    else if(page_number =='price-low'){sort_lowhigh_16_20();}
+    else{default_products_16_20();}
 
-    switch (switch_sort_price) {
-        case 'price-high':
-            sort_highlow_16_20();
-            break;
-        case 'price-low':
-            sort_lowhigh_16_20();
-            break;
-        default:
-            default_products_16_20();
-            break;
-    }
+
     //document.location.reload();
     document.getElementById('page_id').innerHTML = "16-20 of 20 products found";
     document.getElementById('prv-page-go').disabled = false;
